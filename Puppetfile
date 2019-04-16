@@ -20,7 +20,7 @@ mod "puppetlabs/ntp"
 mod "puppetlabs/haproxy"
 
 mod 'tomcat',
-  :git => 'https://github.com/skgchn/puppet-module-tomcat.git',
+  :git => 'https://github.com/skgchn/puppet-module-tomcat.git'
 
 mod 'java',
-  :git => 'https://github.com/skgchn/puppet-module-java.git',
+  :git => 'https://github.com/skgchn/puppet-module-java.git'
