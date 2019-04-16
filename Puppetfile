@@ -17,7 +17,7 @@ forge 'https://forge.puppet.com'
 #  :branch => 'docs_experiment'
 
 mod "puppetlabs/ntp"
-mod "puppetlabs/haproxy"
+mod "puppetlabs/haproxy", '3.0.1'
 
 mod 'tomcat',
   :git => 'https://github.com/skgchn/puppet-module-tomcat.git'
