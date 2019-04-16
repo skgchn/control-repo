@@ -15,3 +15,12 @@ forge 'https://forge.puppet.com'
 #mod 'apache',
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
+
+mod "puppetlabs/ntp"
+mod "puppetlabs/haproxy"
+
+mod 'tomcat',
+  :git => 'https://github.com/skgchn/puppet-module-tomcat.git',
+
+mod 'java',
+  :git => 'https://github.com/skgchn/puppet-module-java.git',
