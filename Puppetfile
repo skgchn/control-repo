@@ -16,8 +16,11 @@ forge 'https://forge.puppet.com'
 #  :git    => 'https://github.com/puppetlabs/puppetlabs-apache',
 #  :branch => 'docs_experiment'
 
+mod 'puppetlabs-stdlib'
+mod 'puppetlabs-translate'
+mod 'puppetlabs-concat'
 mod "puppetlabs/ntp"
-mod "puppetlabs/haproxy", '3.0.1'
+mod "puppetlabs/haproxy"
 
 mod 'tomcat',
   :git => 'https://github.com/skgchn/puppet-module-tomcat.git'
