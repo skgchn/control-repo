@@ -1,11 +1,6 @@
-node 'node1' {
+node 'node3' {
   #include base
-  class {'::tomcat' :
-    user          => root,
-    group         => root,
-    java_opts_xms => '128m',
-    java_opts_xmx => '256m',
-  }
+  class {'::tomcat' : }
 
   tomcat::deploy {'sysfoo':
     deploy_url     => 'https://9-180957468-gh.circle-artifacts.com/0/home/circleci/repo/target/sysfoo.war',
@@ -13,13 +8,8 @@ node 'node1' {
   }
 }
 
-node 'node2' {
-  #include base
-  class {'::tomcat' : }
-}
-
 node default {
   notify{'checkpoint_1':
-    message => '***** DEFAULT block *****'
+    message => '***** Dev: DEFAULT block *****'
   }
 }
