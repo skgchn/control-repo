@@ -1,8 +1,6 @@
 node 'node1' {
   #include base
   class {'::tomcat' :
-    user          => root,
-    group         => root,
     java_opts_xms => '128m',
     java_opts_xmx => '256m',
   }
