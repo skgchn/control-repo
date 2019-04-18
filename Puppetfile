@@ -27,3 +27,9 @@ mod 'tomcat',
 
 mod 'java',
   :git => 'https://github.com/skgchn/puppet-module-java.git'
+
+mod 'profile',
+  :git => 'https://github.com/skgchn/puppet-module-crs001-profile.git'
+
+mod 'role',
+  :git => 'https://github.com/skgchn/puppet-module-crs001-role.git'
