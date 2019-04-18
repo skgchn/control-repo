@@ -28,8 +28,8 @@ mod 'tomcat',
 mod 'java',
   :git => 'https://github.com/skgchn/puppet-module-java.git'
 
-mod 'profile',
+mod 'myprofile',
   :git => 'https://github.com/skgchn/puppet-module-crs001-profile.git'
 
-mod 'role',
+mod 'myrole',
   :git => 'https://github.com/skgchn/puppet-module-crs001-role.git'
