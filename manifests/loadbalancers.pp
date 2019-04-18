@@ -1,3 +1,3 @@
 node 'node4' {
-  include ::role::lb
+  include ::myrole::lb
 }

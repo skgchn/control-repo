@@ -1,11 +1,11 @@
 #hiera_include('classes')
 
 node 'node1' {
-  include ::role::web
+  include ::myrole::web
 }
 
 node 'node2' {
-  include ::role::web
+  include ::myrole::web
 }
 
 node default {
