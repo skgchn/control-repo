@@ -1,6 +1,7 @@
 node 'node3' {
   #include base
-  class {'::tomcat' : }
+  include tomcat # Since using hiearadata now, cannot use class
+  #class {'::tomcat' : }
 
   tomcat::deploy {'sysfoo':
     deploy_url     => 'https://9-180957468-gh.circle-artifacts.com/0/home/circleci/repo/target/sysfoo.war',
