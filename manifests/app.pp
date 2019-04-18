@@ -1,3 +1,5 @@
+hiera_include('classes')
+
 node 'node3' {
   #include base
   include tomcat # Since using hiearadata now, cannot use class
