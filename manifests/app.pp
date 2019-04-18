@@ -14,7 +14,8 @@ node 'node1' {
 
 node 'node2' {
   #include base
-  class {'::tomcat' : }
+  include tomcat
+  #class {'::tomcat' : }
 }
 
 node default {
