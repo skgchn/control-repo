@@ -2,7 +2,7 @@
 version: 5
 
 defaults:
-  datadir: "data"
+  datadir: "/workspace/code/environments/%{::environment}/hieradata"
 
 hierarchy:
   - name: 'Yaml backend'
