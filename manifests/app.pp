@@ -1,9 +1,10 @@
 node 'node1' {
   #include base
-  class {'::tomcat' :
-    java_opts_xms => '128m',
-    java_opts_xmx => '256m',
-  }
+  include tomcat # Since using hieradata, cannot use class
+  #class {'::tomcat' :
+  #  java_opts_xms => '128m',
+  #  java_opts_xmx => '256m',
+  #}
 
   tomcat::deploy {'sysfoo':
     deploy_url     => 'https://9-180957468-gh.circle-artifacts.com/0/home/circleci/repo/target/sysfoo.war',

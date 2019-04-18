@@ -1,0 +1,4 @@
+---
+tomcat::java_opts_xms: '128m'
+tomcat::java_opts_xmx: '256m'
+tomcat::java_opts_maxpermsize: '256M'
